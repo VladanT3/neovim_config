@@ -74,7 +74,7 @@ return {
 					["<Tab>"] = cmp.mapping.select_next_item(),
 					["<S-Tab>"] = cmp.mapping.select_prev_item(),
 
-					["<Esc>"] = cmp.mapping.close(),
+					["<C-e>"] = cmp.mapping.close(),
 
 					-- Manually trigger a completion from nvim-cmp.
 					--  Generally you don't need this, because nvim-cmp will display

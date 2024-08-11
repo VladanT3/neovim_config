@@ -171,13 +171,22 @@ return {
 						},
 					},
 				},
-				gopls = {},
+				gopls = {
+					filetypes = { "go", "templ" },
+				},
 				html = {
 					filetypes = { "html", "templ" },
 				},
 				cssls = {},
 				tailwindcss = {
 					filetypes = { "html", "templ" },
+					settings = {
+						tailwindCSS = {
+							includeLanguages = {
+								templ = "html",
+							},
+						},
+					},
 				},
 				templ = {},
 				sqls = {},
