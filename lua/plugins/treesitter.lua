@@ -19,6 +19,7 @@ return {
 				"templ",
 				"css",
 				"sql",
+				"toml",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,
