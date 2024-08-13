@@ -172,7 +172,15 @@ return {
 					},
 				},
 				gopls = {
-					filetypes = { "go", "templ" },
+					filetypes = { "go", "templ", "gomod", "gosum" },
+					settings = {
+						gopls = {
+							completeUnimported = true,
+							analyses = {
+								unusedparams = true,
+							},
+						},
+					},
 				},
 				html = {
 					filetypes = { "html", "templ" },
