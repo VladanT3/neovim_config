@@ -43,6 +43,5 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- Keymaps for :bnext and :bprev (i should just get harpoon...)
-vim.keymap.set("n", "<C-n>", "<cmd>bnext<CR>")
-vim.keymap.set("n", "<C-p>", "<cmd>bprev<CR>")
+-- Opening and closing the file tree
+vim.keymap.set("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
