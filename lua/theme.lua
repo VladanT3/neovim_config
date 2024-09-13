@@ -11,8 +11,9 @@ return {
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.g.gruvbox_material_background = "hard"
-			vim.g.gruvbox_material_foreground = "material"
+			vim.opt.background = "dark" -- dark or light
+			vim.g.gruvbox_material_background = "soft" -- soft, medium, hard
+			vim.g.gruvbox_material_foreground = "material" -- material, mix, original
 			vim.cmd.colorscheme("gruvbox-material")
 
 			-- You can configure highlights by doing something like:
