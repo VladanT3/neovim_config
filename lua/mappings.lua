@@ -37,11 +37,23 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
--- Keeps the cursor in the middle of the screen when using below commands
+-- Keeps the cursor in the middle of the screen when going up/down with Ctrl+D/U
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- Keeps cursor in the middle when searching for text
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Opening and closing the file tree
 vim.keymap.set("n", "<C-n>", "<cmd>NvimTreeToggle<CR>")
+
+-- Move highlighted text up/down
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
+
+-- When doing 'J' let cursor stay at the same spot
+vim.keymap.set("n", "J", "mzJ`z")
+
+-- When pasting over highlighted text keep the old text copied
+vim.keymap.set("x", "<leader>p", '"_dP')
