@@ -54,7 +54,6 @@ return {
 						"-cdw",
 						"-ss",
 						"-npcs",
-						"-bs",
 						"-nbc",
 						"-sar",
 						"-lp",
