@@ -199,6 +199,7 @@ return {
 				templ = {},
 				sqls = {},
 				clangd = {},
+				jdtls = {},
 			}
 
 			-- Ensure the servers and tools above are installed

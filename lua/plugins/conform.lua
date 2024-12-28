@@ -29,6 +29,7 @@ return {
 				lua = { "stylua" },
 				templ = { "templ" },
 				c = { "indent" },
+				java = { "google_java_format" },
 				-- Conform can also run multiple formatters sequentially
 				-- python = { "isort", "black" },
 				--
