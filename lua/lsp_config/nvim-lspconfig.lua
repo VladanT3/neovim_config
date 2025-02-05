@@ -200,6 +200,7 @@ return {
 				sqls = {},
 				clangd = {},
 				jdtls = {},
+				pylsp = {},
 			}
 
 			-- Ensure the servers and tools above are installed
