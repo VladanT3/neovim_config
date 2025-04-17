@@ -27,10 +27,10 @@ return {
 			end,
 			formatters_by_ft = {
 				lua = { "stylua" },
-				templ = { "templ" },
+				--templ = { "templ" },
 				c = { "indent" },
 				cpp = { "indent" },
-				java = { "google_java_format" },
+				--java = { "google_java_format" },
 				python = { "black" },
 				-- Conform can also run multiple formatters sequentially
 				--
@@ -52,7 +52,6 @@ return {
 						"-bap", -- puts a blank line after procedure body
 						"-nbbo", -- do not break long lines before boolean operators
 						"-cdb", -- places multi-line comment delimiters on blank lines
-						"-sc", -- puts '*' at the start of lines in multi-line comments
 						"-ce", -- puts else on the same line as '}'
 						"-cdw", -- puts while on the same line as '}' in do while
 						"-ss", -- places a space before ';' if its put at the end of a for or while statement

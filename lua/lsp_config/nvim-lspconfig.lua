@@ -182,24 +182,24 @@ return {
 						},
 					},
 				},
-				html = {
-					filetypes = { "html", "templ" },
-				},
-				cssls = {},
-				tailwindcss = {
-					filetypes = { "html", "templ" },
-					settings = {
-						tailwindCSS = {
-							includeLanguages = {
-								templ = "html",
-							},
-						},
-					},
-				},
-				templ = {},
-				sqls = {},
+				--html = {
+				--	filetypes = { "html", "templ" },
+				--},
+				--cssls = {},
+				--tailwindcss = {
+				--	filetypes = { "html", "templ" },
+				--	settings = {
+				--		tailwindCSS = {
+				--			includeLanguages = {
+				--				templ = "html",
+				--			},
+				--		},
+				--	},
+				--},
+				--templ = {},
+				--sqls = {},
 				clangd = {},
-				jdtls = {},
+				--jdtls = {},
 				pylsp = {},
 			}
 
