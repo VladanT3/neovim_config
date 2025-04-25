@@ -8,10 +8,4 @@ return {
       vim.g.gruvbox_material_foreground = "material" -- material, mix, original
     end,
   },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox-material",
-    },
-  },
 }
