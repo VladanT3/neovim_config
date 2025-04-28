@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 vim.keymap.set("n", ";", ":")
+vim.keymap.set("x", "<leader>p", '"_dP') -- Keep old text when pasting over highlighted one
 
 local del = vim.keymap.del
 
