@@ -3,7 +3,7 @@
 -- Add any additional options here
 local opt = vim.opt
 
-opt.relativenumber = true
+opt.relativenumber = false
 opt.ignorecase = false
 opt.list = false
 opt.tabstop = 4

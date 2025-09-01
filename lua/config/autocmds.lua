@@ -9,7 +9,7 @@
 
 -- Disable autoformat for sql files
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "sql" },
+  pattern = { "sql", "python" },
   callback = function()
     vim.b.autoformat = false
   end,
