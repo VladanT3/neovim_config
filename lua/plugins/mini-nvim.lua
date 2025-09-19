@@ -9,7 +9,6 @@ return {
 		})
 		require("mini.icons").setup()
 		-- require("mini.indentscope").setup()
-		require("mini.statusline").setup()
 		require("mini.starter").setup()
 		require("mini.files").setup({
 			mappings = {
@@ -17,5 +16,12 @@ return {
 				go_out = "<Left>",
 			},
 		})
+		local statusline = require("mini.statusline")
+		statusline.setup({ use_icons = vim.g.have_nerd_font })
+
+		---@diagnostic disable-next-line: duplicate-set-field
+		statusline.section_location = function()
+			return "%2l:%-2L"
+		end
 	end,
 }
