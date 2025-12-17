@@ -13,6 +13,7 @@ return {
 		spec = {
 			{ "<leader>s", group = "[S]earch" },
 			{ "<leader>c", group = "[C]ode" },
+			{ "<leader>h", group = "[H]arpoon" },
 		},
 	},
 }

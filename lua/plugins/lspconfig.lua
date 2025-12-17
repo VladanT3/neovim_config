@@ -19,12 +19,12 @@ return {
 				map("<leader>crn", vim.lsp.buf.rename, "[R]e[n]ame")
 				-- Execute a code action, usually your cursor needs to be on top of an error
 				-- or a suggestion from your LSP for this to activate.
-				map("<leader>cca", vim.lsp.buf.code_action, "Execute [C]ode [A]ction", { "n", "x" })
-				map("<leader>cr", require("telescope.builtin").lsp_references, "Goto [R]eference")
+				map("<leader>ca", vim.lsp.buf.code_action, "Execute Code [A]ction", { "n", "x" })
+				map("<leader>crf", require("telescope.builtin").lsp_references, "Goto [R]e[f]erence")
 				map("<leader>ci", require("telescope.builtin").lsp_implementations, "Goto [I]mplementation")
-				map("<leader>cd", require("telescope.builtin").lsp_definitions, "Goto [D]efinition")
-				map("<leader>cD", vim.lsp.buf.declaration, "Goto [D]eclaration")
-				map("<leader>ctd", require("telescope.builtin").lsp_type_definitions, "Goto [T]ype [D]efinition")
+				map("<leader>cdf", require("telescope.builtin").lsp_definitions, "Goto [D]e[f]inition")
+				map("<leader>cdc", vim.lsp.buf.declaration, "Goto [D]e[c]laration")
+				map("<leader>ct", require("telescope.builtin").lsp_type_definitions, "Goto [T]ype Definition")
 
 				-- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
 				---@param client vim.lsp.Client
@@ -120,6 +120,17 @@ return {
 						},
 						-- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
 						-- diagnostics = { disable = { 'missing-fields' } },
+					},
+				},
+			},
+			gopls = {
+				filetypes = { "go", "gomod", "gosum" },
+				settings = {
+					gopls = {
+						completeUnimported = true,
+						analyses = {
+							unusedparams = true,
+						},
 					},
 				},
 			},
