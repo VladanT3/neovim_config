@@ -1,5 +1,5 @@
 do
-    local gh = require("init-plugins").gh
+    local gh = require("plugins.utils").gh
     vim.pack.add { gh 'folke/todo-comments.nvim' }
     require('todo-comments').setup {
         signs = false

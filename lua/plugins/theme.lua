@@ -1,5 +1,5 @@
 do
-    local gh = require("init-plugins").gh
+    local gh = require("plugins.utils").gh
     vim.pack.add { gh "sainnhe/gruvbox-material" }
     vim.opt.background = "dark"                    -- dark or light
     vim.g.gruvbox_material_background = "soft"     -- soft, medium, hard

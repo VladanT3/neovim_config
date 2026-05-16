@@ -1,4 +1,5 @@
 do
+    local gh = require("plugins.utils").gh
     vim.pack.add { gh 'stevearc/conform.nvim' }
     require('conform').setup {
         notify_on_error = false,

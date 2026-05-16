@@ -1,6 +1,6 @@
 do
     -- Autocompletion
-    local gh = require("init-plugins").gh
+    local gh = require("plugins.utils").gh
     vim.pack.add { { src = gh 'saghen/blink.cmp', version = vim.version.range '1.*' } }
     require('blink.cmp').setup {
         keymap = {

@@ -1,5 +1,5 @@
 do
-    local gh = require("init-plugins").gh
+    local gh = require("plugins.utils").gh
     vim.pack.add { { src = gh 'nvim-treesitter/nvim-treesitter', version = 'main' } }
 
     -- Ensure basic parsers are installed

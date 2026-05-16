@@ -1,5 +1,7 @@
-vim.loader.enable()
-require("options")
-require("keymaps")
-require("autocmds")
-require("init-plugins")
+do
+    vim.loader.enable()
+    require("options")
+    require("keymaps")
+    require("autocmds")
+    require("init-plugins")
+end

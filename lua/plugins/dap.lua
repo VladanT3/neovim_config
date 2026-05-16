@@ -1,11 +1,12 @@
 do
+    local gh = require("plugins.utils").gh
     vim.pack.add {
-        'https://github.com/mfussenegger/nvim-dap',
-        'https://github.com/rcarriga/nvim-dap-ui',
-        'https://github.com/nvim-neotest/nvim-nio',
-        'https://github.com/mason-org/mason.nvim',
-        'https://github.com/jay-babu/mason-nvim-dap.nvim',
-        -- 'https://github.com/leoluz/nvim-dap-go',
+        gh 'mfussenegger/nvim-dap',
+        gh 'rcarriga/nvim-dap-ui',
+        gh 'nvim-neotest/nvim-nio',
+        gh 'mason-org/mason.nvim',
+        gh 'jay-babu/mason-nvim-dap.nvim',
+        -- gh 'leoluz/nvim-dap-go'
     }
 
     vim.keymap.set('n', '<F5>', function() require('dap').continue() end, { desc = 'Debug: Start/Continue' })

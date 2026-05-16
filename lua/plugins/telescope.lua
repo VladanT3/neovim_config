@@ -1,5 +1,5 @@
 do
-    local gh = require("init-plugins")
+    local gh = require("plugins.utils").gh
     local telescope_plugins = {
         gh 'nvim-lua/plenary.nvim',
         gh 'nvim-telescope/telescope.nvim',

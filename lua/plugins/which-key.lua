@@ -1,5 +1,5 @@
 do
-    local gh = require("init-plugins").gh
+    local gh = require("plugins.utils").gh
     vim.pack.add { gh 'folke/which-key.nvim' }
     require('which-key').setup {
         delay = 300,

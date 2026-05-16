@@ -1,6 +1,9 @@
 do
-    local gh = require("init-plugins").gh
-    vim.pack.add { gh "ThePrimeagen/harpoon", version = "harpoon2" }
+    local gh = require("plugins.utils").gh
+    vim.pack.add {
+        { src = gh "ThePrimeagen/harpoon", version = "harpoon2" },
+        gh "nvim-lua/plenary.nvim"
+    }
 
     local harpoon = require("harpoon")
     vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end, { desc = "Add file to Harpoon" })

@@ -1,5 +1,5 @@
 do
-    local gh = require("init-plugins").gh
+    local gh = require("plugins.utils").gh
     vim.pack.add { gh 'nvim-mini/mini.nvim' }
     require("mini.pairs").setup()
     require("mini.cursorword").setup({
@@ -8,9 +8,9 @@ do
     require("mini.icons").setup()
     require("mini.starter").setup({
         items = {
-            { name = "Update plugins", action = "lua vim.pack.update()", section = "test" },
-            { name = "Show plugins", action = "lua vim.pack.update(nil, { offline = true })", section = "test" },
-            { name = "Mason", action = "Mason", section = "test" }
+            { name = "Update plugins", action = "lua vim.pack.update()", section = "Plugin management" },
+            { name = "Show plugins", action = "lua vim.pack.update(nil, { offline = true })", section = "Plugin management" },
+            { name = "Mason", action = "Mason", section = "Plugin management" }
         }
     })
     require("mini.files").setup({

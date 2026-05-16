@@ -93,6 +93,7 @@ do
         },
     }
 
+    local gh = require("plugins.utils").gh
     vim.pack.add {
         gh 'neovim/nvim-lspconfig',
         gh 'mason-org/mason.nvim',
