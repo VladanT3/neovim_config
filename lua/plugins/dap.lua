@@ -59,6 +59,13 @@ return {
 			end,
 			desc = "Debug: See last session result.",
 		},
+		{
+			"<F4>",
+			function()
+				require("dap").close()
+			end,
+			desc = "Debug: Stop session.",
+		},
 	},
 	config = function()
 		local dap = require("dap")
