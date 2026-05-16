@@ -1,6 +1,7 @@
-return {
-	"folke/todo-comments.nvim",
-	event = "VimEnter",
-	dependencies = { "nvim-lua/plenary.nvim" },
-	opts = { signs = false },
-}
+do
+    local gh = require("init-plugins").gh
+    vim.pack.add { gh 'folke/todo-comments.nvim' }
+    require('todo-comments').setup {
+        signs = false
+    }
+end
