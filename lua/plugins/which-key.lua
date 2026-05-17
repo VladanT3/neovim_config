@@ -2,6 +2,7 @@ do
     local gh = require("plugins.utils").gh
     vim.pack.add { gh 'folke/which-key.nvim' }
     require('which-key').setup {
+        preset = "helix",
         delay = 300,
         icons = { mappings = vim.g.have_nerd_font },
         spec = {

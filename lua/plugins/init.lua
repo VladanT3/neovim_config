@@ -14,4 +14,5 @@ do
     require("plugins.treesitter")
     require("plugins.undotree")
     require("plugins.which-key")
+    require("plugins.luasnip") -- Dependency for a lot of things
 end
